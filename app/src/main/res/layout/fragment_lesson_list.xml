@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".screens.lesson.LessonListFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_moduleCoverImage"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_planning" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_back_btn" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_module_title"
+            style="@style/DarkGrey.TextSize24.ExtraBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_module_title"
+            android:textSize="34sp" />
+
+        <TextView
+            android:id="@+id/tv_module_name"
+            style="@style/LightGrey.TextSize16.Regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Module 1" />
+
+        <TextView
+            android:id="@+id/tv_module_description"
+            style="@style/DarkGrey.TextSize16.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Learn about the basics of a HAB and how to design and build your first launch ready prototype." />
+
+        <View
+            android:id="@+id/view_line_color"
+            android:layout_width="40dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/Purple" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/VeryLightGrey" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_lessonList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/item_lesson"/>
+
+    </LinearLayout>
+
+</LinearLayout>

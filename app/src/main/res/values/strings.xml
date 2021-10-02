@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Startofox</string>
+    <string name="tv_resources_label">Resources</string>
+    <string name="tv_module_title">Planning</string>
+    <string name="tv_welcome_label">Welcome to StartoFox</string>
+    <string name="tv_tag_line">Near Space Exploration Made Easy</string>
+    <string name="tv_ques_add_name">What do your friends call you?</string>
+    <string name="et_name_hint">Name</string>
+    <string name="btn_label_continue">Continue</string>
+</resources>

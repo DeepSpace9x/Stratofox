@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lesson_nav_graph"
+    app:startDestination="@id/lessonListFragment">
+    <fragment
+        android:id="@+id/lessonListFragment"
+        android:name="com.deepspace.hab.screens.lesson.LessonListFragment"
+        android:label="fragment_lesson_list"
+        tools:layout="@layout/fragment_lesson_list" />
+    <fragment
+        android:id="@+id/lessonDetailFragment"
+        android:name="com.deepspace.hab.screens.lesson.LessonDetailFragment"
+        android:label="fragment_lesson_detail"
+        tools:layout="@layout/fragment_lesson_detail" />
+</navigation>

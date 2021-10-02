@@ -1,0 +1,74 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'com.google.gms.google-services'
+    id 'kotlin-parcelize'
+    id 'androidx.navigation.safeargs.kotlin'
+}
+
+def rootConfiguration = rootProject.ext
+
+android {
+    compileSdk rootConfiguration.compileSdkVersion
+
+    defaultConfig {
+        applicationId "com.deepspace.hab"
+        minSdk rootConfiguration.minSdkVersion
+        targetSdk rootConfiguration.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures{
+        viewBinding = true
+    }
+}
+
+dependencies {
+
+    implementation project(":common")
+    implementation project(":resources")
+    implementation project(":data")
+    implementation project(":domain")
+    implementation "androidx.core:core-ktx:${rootConfiguration.androidXVersion}"
+    implementation "androidx.appcompat:appcompat:${rootConfiguration.appCompatVersion}"
+    implementation "com.google.android.material:material:${rootConfiguration.materialVersion}"
+    implementation "androidx.constraintlayout:constraintlayout:${rootConfiguration.constraintLayoutVersion}"
+    implementation "androidx.annotation:annotation:${rootConfiguration.annotationVersion}"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:${rootConfiguration.lifecycleVersion}"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:${rootConfiguration.lifecycleVersion}"
+    implementation "androidx.lifecycle:lifecycle-extensions:${rootConfiguration.lifecycleExtension}"
+
+    implementation "com.jakewharton.timber:timber:${rootConfiguration.timberVersion}"
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    //Test
+    testImplementation "junit:junit:${rootConfiguration.junitVersion}"
+    androidTestImplementation "androidx.test.ext:junit:${rootConfiguration.extJunitVersion}"
+    androidTestImplementation "androidx.test.espresso:espresso-core:${rootConfiguration.espressoVersion}"
+
+    //Firebase
+    implementation platform("com.google.firebase:firebase-bom:${rootConfiguration.firebaseBOMVersion}")
+    implementation 'com.google.firebase:firebase-auth-ktx'
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-firestore-ktx'
+
+    //navigation
+    implementation "androidx.navigation:navigation-fragment-ktx:${rootConfiguration.navVersion}"
+    implementation "androidx.navigation:navigation-ui-ktx:${rootConfiguration.navVersion}"
+}
