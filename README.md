@@ -3,6 +3,8 @@
 ![NEAR SPACE, MADE EASY](https://user-images.githubusercontent.com/43119465/135724983-c19e39e3-9560-4c95-bff3-5e15a671e721.png)
 
 
+## The latest development for the project is going on in the hackathon branch.
+
 ## Project Idea Description  : 
 
 ### Team Name : DeepSpace 9
