@@ -1,6 +1,6 @@
 # Stratofox
 
-![NEAR SPACE, MADE EASY](https://user-images.githubusercontent.com/43119465/135724983-c19e39e3-9560-4c95-bff3-5e15a671e721.png)
+![NEAR SPACE, MADE EASY (1)](https://user-images.githubusercontent.com/43119465/135766702-a3e807e5-cccf-4ee1-9e18-c30e0b91ed93.png)
 
 
 ## The latest development for the project is going on in the hackathon branch.
