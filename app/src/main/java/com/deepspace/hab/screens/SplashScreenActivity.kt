@@ -44,13 +44,33 @@ class SplashScreenActivity : AppCompatActivity() {
     private fun fetchModulesList(isFirstLogin: Boolean) {
 
         val moduleList = listOf(
-            Module(title = "Planning",moduleDuration = "3-4 Days",rank = 1,description = "Module 1 description"),
-            Module(title = "Test",moduleDuration = "5-7 Days",rank = 2,description = "Module 2 description"),
-            Module(title = "Launch",moduleDuration = "3-4 Days",rank = 3,description = "Module 3 description"),
-            Module(title = "Retrieval",moduleDuration = "5-7 Days",rank = 4,description = "Module 4 description")
+            Module(
+                title = "Planning",
+                moduleDuration = "3-4 Days",
+                rank = 1,
+                description = "Module 1 description"
+            ),
+            Module(
+                title = "Test",
+                moduleDuration = "5-7 Days",
+                rank = 2,
+                description = "Module 2 description"
+            ),
+            Module(
+                title = "Launch",
+                moduleDuration = "3-4 Days",
+                rank = 3,
+                description = "Module 3 description"
+            ),
+            Module(
+                title = "Retrieval",
+                moduleDuration = "5-7 Days",
+                rank = 4,
+                description = "Module 4 description"
+            )
         )
 
-        if(!isFirstLogin)
+        if (!isFirstLogin)
             shiftToHomeActivity(moduleList)
         else
             shiftToWelcomeActivity(moduleList)
