@@ -1,5 +1,14 @@
 # Stratofox
 
+
+[![Release](https://img.shields.io/badge/Pre--Release-Download%20APK-green?style=for-the-badge&logo=appveyor?label=healthinesses)](https://github.com/DeepSpace9x/Stratofox/releases/download/v0.2-alpha/stratofox-prerelease-v0.2-alpha.apk)
+
+
+![NEAR SPACE, MADE EASY (1)](https://user-images.githubusercontent.com/43119465/135766702-a3e807e5-cccf-4ee1-9e18-c30e0b91ed93.png)
+
+
+## The latest development for the project is going on in the hackathon branch.
+
 ## Project Idea Description  : 
 
 ### Team Name : DeepSpace 9
@@ -35,5 +44,4 @@ We will provide all the resources that the students might require during or befo
 Implementation : The Android app will be developed using Kotlin. The app will be based on interactive designs and illustrative resources.
 Flow : The app will follow a module based design which will be based on research content and distribute the content in easy to understand lessons.
 Mentorship : Help the students connect to different space agency and communities.
-Bill of Materials (BOM) : All the equipment (like the payload, parachute and balloon) will have a detailed and specific description. Students can directly purchase the material required to build a balloon using certain global e-commerce links or global vendors. It will help them set the budget of the experiment and design the outline accordingly.
-
+Bill of Materials (BOM) : All the equipment (like the payload, parachute and balloon) will have a detailed and specific description. Students can directly purchase the material required to build a balloon using certain global e-commerce links or global vendors. It will help them set the budget of the experiment and design the outline accordingly. 

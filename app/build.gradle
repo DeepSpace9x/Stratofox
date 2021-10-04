@@ -4,6 +4,7 @@ plugins {
     id 'com.google.gms.google-services'
     id 'kotlin-parcelize'
     id 'androidx.navigation.safeargs.kotlin'
+    id 'kotlin-kapt'
 }
 
 def rootConfiguration = rootProject.ext
@@ -43,8 +44,6 @@ dependencies {
 
     implementation project(":common")
     implementation project(":resources")
-    implementation project(":data")
-    implementation project(":domain")
     implementation "androidx.core:core-ktx:${rootConfiguration.androidXVersion}"
     implementation "androidx.appcompat:appcompat:${rootConfiguration.appCompatVersion}"
     implementation "com.google.android.material:material:${rootConfiguration.materialVersion}"
@@ -71,4 +70,8 @@ dependencies {
     //navigation
     implementation "androidx.navigation:navigation-fragment-ktx:${rootConfiguration.navVersion}"
     implementation "androidx.navigation:navigation-ui-ktx:${rootConfiguration.navVersion}"
+
+    implementation "io.noties.markwon:core:${rootConfiguration.markwonVersion}"
+    implementation("com.squareup.moshi:moshi-kotlin:${rootConfiguration.moshiVersion}")
+    kapt("com.squareup.moshi:moshi-kotlin-codegen:${rootConfiguration.moshiVersion}")
 }

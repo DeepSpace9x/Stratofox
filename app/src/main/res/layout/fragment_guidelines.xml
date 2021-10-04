@@ -20,12 +20,14 @@
             android:text="@string/tv_guidelines_label" />
 
         <include
+            android:id="@+id/card_communityGuidelines"
             layout="@layout/cardview_community_guidelines"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="14dp" />
 
         <include
+            android:id="@+id/card_govtProtocols"
             layout="@layout/cardview_govt_protocols"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />

@@ -9,7 +9,7 @@ import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.deepspace.domain.models.Module
+import com.deepspace.hab.models.Module
 import com.deepspace.hab.R
 import com.google.android.material.card.MaterialCardView
 

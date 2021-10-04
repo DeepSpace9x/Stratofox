@@ -6,9 +6,7 @@ dependencyResolutionManagement {
         jcenter() // Warning: this repository is going to shut down soon
     }
 }
-rootProject.name = "Stratofox"
+rootProject.name = "StratoFox"
 include ':app'
 include ':common'
 include ':resources'
-include ':data'
-include ':domain'

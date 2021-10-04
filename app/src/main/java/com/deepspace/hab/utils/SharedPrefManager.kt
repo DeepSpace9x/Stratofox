@@ -91,7 +91,15 @@ class SharedPrefManager(context: Context) {
     }
 
     fun getUserName(): String? {
-        return getString(KEY_USERNAME);
+        return getStringOrNull(KEY_USERNAME);
+    }
+
+    fun setIsUserFirstTime(isFirstTime: Boolean) {
+        setBoolean(KEY_FIRST_TIME_LOGIN,isFirstTime)
+    }
+
+    fun getIsUserFirstTime() : Boolean{
+        return sharedPreferences.getBoolean(KEY_FIRST_TIME_LOGIN,true)
     }
 
     companion object {
@@ -101,6 +109,7 @@ class SharedPrefManager(context: Context) {
         const val KEY_DARK_MODE = "isDarkModeOn"
         const val KEY_UID = "uid"
         const val KEY_USERNAME = "username"
+        const val KEY_FIRST_TIME_LOGIN = "firstTime"
 
         private val sharedPrefManager: SharedPrefManager? = null
 

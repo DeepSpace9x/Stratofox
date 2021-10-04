@@ -2,6 +2,7 @@ package com.deepspace.hab.screens.guidelines
 
 import android.os.Bundle
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import com.deepspace.common.base.BaseFragment
 import com.deepspace.hab.R
@@ -22,6 +23,13 @@ class GuidelinesFragment : BaseFragment<FragmentGuidelinesBinding>() {
             GridLayoutManager(requireContext(), 2, GridLayoutManager.VERTICAL, false)
         binding.rvResources.adapter = resourceAdapter
         resourceAdapter.submitList(getResourceList())
+
+        binding.cardCommunityGuidelines.setOnClickListener {
+            findNavController().navigate(GuidelinesFragmentDirections.actionGuidelinesFragmentToGuidelinesDetailActivity("community"))
+        }
+        binding.cardGovtProtocols.setOnClickListener {
+            findNavController().navigate(GuidelinesFragmentDirections.actionGuidelinesFragmentToGuidelinesDetailActivity("govt"))
+        }
     }
 
     private fun getResourceList(): List<Resource> {

@@ -1,0 +1,42 @@
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_govt_protocols"
+        android:orientation="horizontal"
+        android:padding="24dp">
+
+        <TextView
+            style="@style/DarkGrey.TextSize18.Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_toStartOf="@id/tv_startBtn"
+            android:text="@string/tv_govt_protocols_label" />
+
+        <TextView
+            android:id="@+id/tv_startBtn"
+            style="@style/DarkGrey.TextSize16.Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_start_btn_greywhite"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingTop="8dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="8dp"
+            android:text="@string/tv_readBtn_label"
+            android:textAllCaps="true" />
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

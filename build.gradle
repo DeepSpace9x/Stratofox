@@ -3,6 +3,7 @@ buildscript {
     repositories {
         google()
         mavenCentral()
+        maven { url "https://jitpack.io" }
     }
     dependencies {
         classpath "com.android.tools.build:gradle:7.0.2"
@@ -37,4 +38,6 @@ ext{
     espressoVersion = '3.4.0'
     navVersion = '2.3.5'
     coroutinePlayServices = '1.5.2-native-mt'
+    markwonVersion = '4.6.2'
+    moshiVersion = '1.12.0'
 }

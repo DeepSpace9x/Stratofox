@@ -8,7 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.deepspace.domain.models.ModuleSection
+import com.deepspace.hab.models.ModuleSection
 import com.deepspace.hab.R
 
 /**
@@ -42,6 +42,7 @@ class LessonListAdapter(private val onClick: (ModuleSection) -> Unit) :
 
         private fun getPlayBtn(moduleNo: Int): Int {
             return when (moduleNo) {
+                0 -> R.drawable.ic_play_red
                 1 -> R.drawable.ic_play_purple
                 2 -> R.drawable.ic_play_light_orange
                 3 -> R.drawable.ic_play_green

@@ -2,11 +2,10 @@ package com.deepspace.hab.screens.modules
 
 import android.os.Bundle
 import androidx.fragment.app.activityViewModels
-import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import com.deepspace.common.base.BaseFragment
-import com.deepspace.domain.models.Module
+import com.deepspace.hab.models.Module
 import com.deepspace.hab.databinding.FragmentModuleBinding
 import com.deepspace.hab.screens.HomeViewModel
 import timber.log.Timber
@@ -24,6 +23,19 @@ class ModuleFragment : BaseFragment<FragmentModuleBinding>() {
             GridLayoutManager(requireContext(), 2, GridLayoutManager.VERTICAL, false)
         binding.rvModules.adapter = moduleAdapter
         moduleAdapter.submitList(viewModel.moduleList)
+
+        binding.cardModule0.setOnClickListener {
+            findNavController().navigate(
+                ModuleFragmentDirections.actionModuleFragmentToLessonActivity(
+                    Module(
+                        description = "Learn about the fundamentals and experiment of building a HAB",
+                        title = "Prerequisite",
+                        rank = 0,
+                    )
+                )
+            )
+        }
+
     }
 
     private fun onModuleClicked(module: Module) {

@@ -1,0 +1,311 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/White</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/bg_main</item>
+    </style>
+
+    <style name="SplashTheme" parent="AppTheme.NoActionBar">
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowEnterAnimation">@null</item>
+        <item name="android:windowExitAnimation">@null</item>
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+    </style>
+
+    <style name="DarkGrey">
+        <item name="android:textColor">@color/DarkGrey</item>
+    </style>
+
+    <style name="LightGrey">
+        <item name="android:textColor">@color/LightGrey</item>
+    </style>
+
+    <style name="White">
+        <item name="android:textColor">@color/White</item>
+    </style>
+
+    <style name="GreyWhite">
+        <item name="android:textColor">@color/GreyWhite</item>
+    </style>
+
+    <style name="Cream">
+        <item name="android:textColor">@color/Cream</item>
+    </style>
+
+    <style name="DarkGrey.TextSize24" parent="DarkGrey">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="DarkGrey.TextSize16" parent="DarkGrey">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="DarkGrey.TextSize18" parent="DarkGrey">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="DarkGrey.TextSize11" parent="DarkGrey">
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="White.TextSize18" parent="White">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="GreyWhite.TextSize11" parent="GreyWhite">
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="GreyWhite.TextSize16" parent="GreyWhite">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Cream.TextSize20" parent="Cream">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="LightGrey.TextSize16" parent="LightGrey">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="LightGrey.TextSize11" parent="LightGrey">
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="DarkGrey.TextSize24.Bold" parent="DarkGrey.TextSize24">
+        <item name="android:fontFamily">@font/bold</item>
+    </style>
+
+    <style name="DarkGrey.TextSize24.ExtraBold" parent="DarkGrey.TextSize24">
+        <item name="android:fontFamily">@font/extrabold</item>
+    </style>
+
+    <style name="DarkGrey.TextSize24.Light" parent="DarkGrey.TextSize24">
+        <item name="android:fontFamily">@font/light</item>
+    </style>
+
+    <style name="DarkGrey.TextSize24.Regular" parent="DarkGrey.TextSize24">
+        <item name="android:fontFamily">@font/regular</item>
+    </style>
+
+    <style name="DarkGrey.TextSize24.ExtraLight" parent="DarkGrey.TextSize24">
+        <item name="android:fontFamily">@font/extralight</item>
+    </style>
+
+    <style name="DarkGrey.TextSize16.Bold" parent="DarkGrey.TextSize16">
+        <item name="android:fontFamily">@font/bold</item>
+    </style>
+
+    <style name="DarkGrey.TextSize16.ExtraBold" parent="DarkGrey.TextSize16">
+        <item name="android:fontFamily">@font/extrabold</item>
+    </style>
+
+    <style name="DarkGrey.TextSize16.Light" parent="DarkGrey.TextSize16">
+        <item name="android:fontFamily">@font/light</item>
+    </style>
+
+    <style name="DarkGrey.TextSize16.Regular" parent="DarkGrey.TextSize16">
+        <item name="android:fontFamily">@font/regular</item>
+    </style>
+
+    <style name="DarkGrey.TextSize16.ExtraLight" parent="DarkGrey.TextSize16">
+        <item name="android:fontFamily">@font/extralight</item>
+    </style>
+
+    <style name="LightGrey.TextSize16.Bold" parent="LightGrey.TextSize16">
+        <item name="android:fontFamily">@font/bold</item>
+    </style>
+
+    <style name="LightGrey.TextSize16.ExtraBold" parent="LightGrey.TextSize16">
+        <item name="android:fontFamily">@font/extrabold</item>
+    </style>
+
+    <style name="LightGrey.TextSize16.Light" parent="LightGrey.TextSize16">
+        <item name="android:fontFamily">@font/light</item>
+    </style>
+
+    <style name="LightGrey.TextSize16.Regular" parent="LightGrey.TextSize16">
+        <item name="android:fontFamily">@font/regular</item>
+    </style>
+
+    <style name="LightGrey.TextSize16.ExtraLight" parent="LightGrey.TextSize16">
+        <item name="android:fontFamily">@font/extralight</item>
+    </style>
+
+    <style name="White.TextSize18.Bold" parent="White.TextSize18">
+        <item name="android:fontFamily">@font/bold</item>
+    </style>
+
+    <style name="White.TextSize18.ExtraBold" parent="White.TextSize18">
+        <item name="android:fontFamily">@font/extrabold</item>
+    </style>
+
+    <style name="White.TextSize18.Light" parent="White.TextSize18">
+        <item name="android:fontFamily">@font/light</item>
+    </style>
+
+    <style name="White.TextSize18.Regular" parent="White.TextSize18">
+        <item name="android:fontFamily">@font/regular</item>
+    </style>
+
+    <style name="White.TextSize18.ExtraLight" parent="White.TextSize18">
+        <item name="android:fontFamily">@font/extralight</item>
+    </style>
+
+    <style name="GreyWhite.TextSize11.Bold" parent="GreyWhite.TextSize11">
+        <item name="android:fontFamily">@font/bold</item>
+    </style>
+
+    <style name="GreyWhite.TextSize11.ExtraBold" parent="GreyWhite.TextSize11">
+        <item name="android:fontFamily">@font/extrabold</item>
+    </style>
+
+    <style name="GreyWhite.TextSize11.Light" parent="GreyWhite.TextSize11">
+        <item name="android:fontFamily">@font/light</item>
+    </style>
+
+    <style name="GreyWhite.TextSize11.Regular" parent="GreyWhite.TextSize11">
+        <item name="android:fontFamily">@font/regular</item>
+    </style>
+
+    <style name="GreyWhite.TextSize11.ExtraLight" parent="GreyWhite.TextSize11">
+        <item name="android:fontFamily">@font/extralight</item>
+    </style>
+
+    <style name="Cream.TextSize20.Bold" parent="Cream.TextSize20">
+        <item name="android:fontFamily">@font/bold</item>
+    </style>
+
+    <style name="Cream.TextSize20.ExtraBold" parent="Cream.TextSize20">
+        <item name="android:fontFamily">@font/extrabold</item>
+    </style>
+
+    <style name="Cream.TextSize20.Light" parent="Cream.TextSize20">
+        <item name="android:fontFamily">@font/light</item>
+    </style>
+
+    <style name="Cream.TextSize20.Regular" parent="Cream.TextSize20">
+        <item name="android:fontFamily">@font/regular</item>
+    </style>
+
+    <style name="Cream.TextSize20.ExtraLight" parent="Cream.TextSize20">
+        <item name="android:fontFamily">@font/extralight</item>
+    </style>
+
+    <style name="DarkGrey.TextSize18.Bold" parent="DarkGrey.TextSize18">
+        <item name="android:fontFamily">@font/bold</item>
+    </style>
+
+    <style name="DarkGrey.TextSize18.ExtraBold" parent="DarkGrey.TextSize18">
+        <item name="android:fontFamily">@font/extrabold</item>
+    </style>
+
+    <style name="DarkGrey.TextSize18.Light" parent="DarkGrey.TextSize18">
+        <item name="android:fontFamily">@font/light</item>
+    </style>
+
+    <style name="DarkGrey.TextSize18.Regular" parent="DarkGrey.TextSize18">
+        <item name="android:fontFamily">@font/regular</item>
+    </style>
+
+    <style name="DarkGrey.TextSize18.ExtraLight" parent="DarkGrey.TextSize18">
+        <item name="android:fontFamily">@font/extralight</item>
+    </style>
+
+    <style name="DarkGrey.TextSize11.Bold" parent="DarkGrey.TextSize11">
+        <item name="android:fontFamily">@font/bold</item>
+    </style>
+
+    <style name="DarkGrey.TextSize11.ExtraBold" parent="DarkGrey.TextSize11">
+        <item name="android:fontFamily">@font/extrabold</item>
+    </style>
+
+    <style name="DarkGrey.TextSize11.Light" parent="DarkGrey.TextSize11">
+        <item name="android:fontFamily">@font/light</item>
+    </style>
+
+    <style name="DarkGrey.TextSize11.Regular" parent="DarkGrey.TextSize11">
+        <item name="android:fontFamily">@font/regular</item>
+    </style>
+
+    <style name="DarkGrey.TextSize11.ExtraLight" parent="DarkGrey.TextSize11">
+        <item name="android:fontFamily">@font/extralight</item>
+    </style>
+
+    <style name="GreyWhite.TextSize16.Bold" parent="GreyWhite.TextSize16">
+        <item name="android:fontFamily">@font/bold</item>
+    </style>
+
+    <style name="GreyWhite.TextSize16.ExtraBold" parent="GreyWhite.TextSize16">
+        <item name="android:fontFamily">@font/extrabold</item>
+    </style>
+
+    <style name="GreyWhite.TextSize16.Light" parent="GreyWhite.TextSize16">
+        <item name="android:fontFamily">@font/light</item>
+    </style>
+
+    <style name="GreyWhite.TextSize16.Regular" parent="GreyWhite.TextSize16">
+        <item name="android:fontFamily">@font/regular</item>
+    </style>
+
+    <style name="GreyWhite.TextSize16.ExtraLight" parent="GreyWhite.TextSize16">
+        <item name="android:fontFamily">@font/extralight</item>
+    </style>
+
+    <style name="LightGrey.TextSize11.Bold" parent="LightGrey.TextSize11">
+        <item name="android:fontFamily">@font/bold</item>
+    </style>
+
+    <style name="LightGrey.TextSize11.ExtraBold" parent="LightGrey.TextSize11">
+        <item name="android:fontFamily">@font/extrabold</item>
+    </style>
+
+    <style name="LightGrey.TextSize11.Light" parent="LightGrey.TextSize11">
+        <item name="android:fontFamily">@font/light</item>
+    </style>
+
+    <style name="LightGrey.TextSize11.Regular" parent="LightGrey.TextSize11">
+        <item name="android:fontFamily">@font/regular</item>
+    </style>
+
+    <style name="LightGrey.TextSize11.ExtraLight" parent="LightGrey.TextSize11">
+        <item name="android:fontFamily">@font/extralight</item>
+    </style>
+
+    <style name="DarkGreyButton">
+        <item name="android:textColor">@color/GreyWhite</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/bold</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+
+    <style name="GreyWhiteButton">
+        <item name="android:textColor">@color/DarkGrey</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/bold</item>
+        <item name="background">@drawable/bg_start_btn_greywhite</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+
+</resources>

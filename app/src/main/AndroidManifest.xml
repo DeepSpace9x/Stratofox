@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.deepspace.hab">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".Stratofox"
         android:allowBackup="true"
@@ -11,11 +13,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
         <activity
-            android:name=".screens.welcome.WelcomeActivity"
+            android:name=".screens.guidelines.GuidelinesDetailActivity"
             android:exported="true" />
         <activity
+            android:name=".screens.welcome.WelcomeActivity"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
             android:name=".screens.lesson.LessonActivity"
-            android:exported="true" />
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".screens.SplashScreenActivity"
             android:configChanges="orientation|keyboardHidden"

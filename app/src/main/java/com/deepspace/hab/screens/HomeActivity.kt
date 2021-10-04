@@ -1,12 +1,13 @@
 package com.deepspace.hab.screens
 
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
 import com.deepspace.common.base.BaseActivity
-import com.deepspace.domain.models.Module
+import com.deepspace.hab.models.Module
 import com.deepspace.hab.R
 import com.deepspace.hab.databinding.ActivityHomeBinding
 import java.util.*
@@ -20,10 +21,14 @@ class HomeActivity : BaseActivity<ActivityHomeBinding>() {
 
     override fun create(savedInstanceState: Bundle?) {
         getModulesViaIntent()
+        if (homeViewModel.moduleList != null) {
+            binding.progressBar.visibility = View.INVISIBLE
+            binding.navHostFragment.visibility = View.VISIBLE
+        }
         val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         val navController = navHostFragment.navController
-        NavigationUI.setupWithNavController(binding.bottomNavigation,navController)
+        NavigationUI.setupWithNavController(binding.bottomNavigation, navController)
     }
 
     private fun getModulesViaIntent() {

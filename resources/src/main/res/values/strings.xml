@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">StratoFox</string>
+    <string name="title_activity_home">Home</string>
+    <string name="menu_ic_home_label">Home</string>
+    <string name="menu_ic_tools_label">Tools</string>
+    <string name="menu_ic_resources_label">Resources</string>
+    <string name="menu_ic_guidelines_label">Guidelines</string>
+    <string name="menu_ic_profile_label">Profile</string>
+    <string name="tv_greeting_label">Good Morning, Abhinav</string>
+    <string name="tv_greeting_subheading">Let\'s Explore the Near Space Together!</string>
+    <string name="tv_module0_getStarted">Get Started</string>
+    <string name="tv_module0_title">Prerequisite</string>
+    <string name="tv_module0_completionTime">10–30 Mins</string>
+    <string name="tv_moduleNo">01</string>
+    <string name="tv_module_title">Planning</string>
+    <string name="tv_startBtnLabel">Start</string>
+    <string name="tv_community_guidelines_label">Community Guidelines</string>
+    <string name="tv_guidelines_label">Guidelines</string>
+    <string name="tv_govt_protocols_label">Government Protocols</string>
+    <string name="tv_bill_of_materials_label">Bill Of Materials (BOM)</string>
+    <string name="tv_bom_subtitle">Learn about the equipments and design your budget</string>
+    <string name="tv_inspiration_label">Inspiration for HAB</string>
+    <string name="tv_inspiration_subtitle">Get insights to make your HAB more impactful</string>
+    <string name="tv_readBtn_label">Read</string>
+    <string name="tv_faqs_label">FAQs</string>
+    <string name="tv_faq_subtitle">Confused with something?\nLearn about them here !</string>
+</resources>
