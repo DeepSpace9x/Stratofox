@@ -1,7 +1,7 @@
 # Stratofox
 
 
-[![Release](https://img.shields.io/badge/Pre--Release-Download%20APK-green?style=for-the-badge&logo=appveyor?label=healthinesses)](https://github.com/DeepSpace9x/Stratofox/releases/download/v0.2-alpha/stratofox-prerelease-v0.2-alpha.apk)
+[![Release](https://img.shields.io/badge/Pre--Release-Download%20APK-green?style=for-the-badge&logo=appveyor?label=healthinesses)](https://github.com/DeepSpace9x/Stratofox/releases/download/v0.3-alpha/stratofox-prerelease-v0.3.apk)
 
 
 ![NEAR SPACE, MADE EASY (1)](https://user-images.githubusercontent.com/43119465/135766702-a3e807e5-cccf-4ee1-9e18-c30e0b91ed93.png)
